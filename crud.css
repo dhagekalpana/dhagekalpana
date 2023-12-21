@@ -1,0 +1,48 @@
+body{
+    background-image:url(kalpana.jpg);
+    background-attachment: fixed;
+    background-size:contain
+}
+table{
+    width:50%;
+    height:5px;
+    margin:30px auto;
+    background: lightslategray;
+    
+}
+table.list{
+    text-align: center;
+    width: 100px;
+}
+td{
+    border:1px solid rgb(284,280,284);
+    text-align:center;
+    padding:1px;
+}
+input[type="text"],
+input[type="number"] {
+    width: calc(50% - 10px);
+    padding: 12px 28px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(7, 6, 6);
+    border-radius: 4px;
+}
+
+input[type="password"] {
+    width: calc(50% - 10px);
+    padding: 12px 28px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(7, 6, 6);
+    border-radius: 4px;
+}
+
+input[type="submit"],input[type="Reset"]{
+    width: 91px;
+    padding:12px;
+    margin:8px;
+    display:inline-block ;
+    border:1px solid brown;
+    border-radius: 4px;
+}
