@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" type="text/css" href="crud.css">
+</head>
+<body>
+    <h1>DataMingle: CRUD Express</h1>
+    
+
+    <form id="crudForm">
+        <div>
+            <label for="username"><h2>username</h2></label>
+            <input type="text" name="username" id="username" pattern="[A-Z]+" title="Username should only contain alphabet characters" required>>
+        </div>
+        <div>
+            <label for="password"><h2>password</h2></label>
+            <input type="password" name="password" id="password">
+            <input type="checkbox" onclick="myFunction()">show password
+
+        </div>
+        <div>
+            <label for="contact"><h2>contact</h2></label>
+            <input type="text" name="contact" id="contact" pattern="\d{10}" title="Contact should be exactly 10 digits" required>
+        </div>
+        <div>
+            <label for="Email"><h2>Email</h2></label>
+            <input type="text" name="Email" id="Email" pattern="d\@gmail.com" title="Please enter a valid email address " required>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="Reset" value="Reset">
+        </div>
+    </form>
+    <table id="storeList">
+        <thead>
+            <tr>
+                <th><h3>Username</h3></th>
+                <th><h3>password</h3></th>
+                <th><h3>Contact</h3></th>
+                <th><h3>Email</h3></th>
+                <th><h3>Action</h3></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script type="text/javascript" src="./crud.js"></script>
+</body>
+</html>
